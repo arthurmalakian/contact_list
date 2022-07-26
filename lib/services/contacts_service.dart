@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
 class ContactsService {
-  static String baseUrl = 'http://localhost/api/contacts';
+  static String baseUrl = 'https://apicontactlist.dreamhosters.com/api/contacts';
   static Future<List<Contact>> index() async {
     final response = await http.get(
       Uri.parse(baseUrl),

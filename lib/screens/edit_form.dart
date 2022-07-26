@@ -63,6 +63,19 @@ class _EditForm extends State<EditForm> {
               Padding(
                   padding: const EdgeInsets.only(top: 16),
                   child: TextFormField(
+                    initialValue: contact.surname,
+                    decoration: const InputDecoration(
+                      labelText: 'Surname',
+                      icon: Icon(Icons.account_box),
+                    ),
+                    keyboardType: TextInputType.text,
+                    onChanged: (text) {
+                      contact.surname = text;
+                    },
+                  )),
+              Padding(
+                  padding: const EdgeInsets.only(top: 16),
+                  child: TextFormField(
                     initialValue: contact.phone,
                     decoration: const InputDecoration(
                       labelText: 'Phone',

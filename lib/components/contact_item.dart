@@ -77,7 +77,7 @@ class ContactItem extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        contact.name.toString(),
+                        '${contact.name.toString()} ${contact.surname.toString()}',
                         style: const TextStyle(color: Colors.white),
                       ),
                       Text(contact.phone.toString(),

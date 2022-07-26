@@ -42,7 +42,7 @@ class _ContactDetails extends State<ContactDetails> {
                 Column(
                   children: [
                     Text(
-                      contact.name.toString(),
+                      '${contact.name.toString()} ${contact.surname.toString()}',
                       style: const TextStyle(color: Colors.black),
                     ),
                     InkWell(

@@ -23,6 +23,7 @@ class ContactsService {
     var requestBody = {
       'id': contact.id,
       'name': contact.name,
+      'surname': contact.surname,
       'phone': contact.phone,
       'email': contact.email,
       'status': "NORMAL",
@@ -46,6 +47,7 @@ class ContactsService {
     var requestBody = {
       'id': contact.id,
       'name': contact.name,
+      'surname': contact.surname,
       'phone': contact.phone,
       'email': contact.email,
       'status': contact.status,
